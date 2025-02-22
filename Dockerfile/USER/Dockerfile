@@ -1,4 +1,4 @@
 FROM almalinux:9
-RUN useradd paven
+RUN useradd pavan
 USER pavan
 CMD [ "ping", "google.com" ]
