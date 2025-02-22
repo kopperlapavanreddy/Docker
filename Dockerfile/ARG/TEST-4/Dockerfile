@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:$vesrion
 ARG name="pavan" \
     cloud="aws"
 RUN echo "name is $name working on $cloud"
