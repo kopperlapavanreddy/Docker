@@ -1,8 +1,9 @@
 ARG version
-FROM almalinux:$version
+FROM almalinux:${version:-9}
 ARG name="pavan" \
-    cloud="aws"
-RUN echo "name is $name working on $cloud"
+    cloud="AWS"
+ENV cloud=$cloud
+RUN echo "Course: $course, duration: $duration, version: $version"
 CMD ["sleep","100"]
 
 # we can pass the arg values run time using below command
